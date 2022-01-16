@@ -13,7 +13,10 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="src/style.css" />
-    <title>Weather App</title>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    
+    <title>Weather</title>
   </head>
   <body>
     <div class="container">
@@ -31,7 +34,7 @@
                 />
               </div>
               <div class="col-3">
-                <input type="submit" value="Search" class="btn btn-dark" />
+                <input type="submit" value="Search" class="btn btn-dark" class="button" />
               </div>
             </div>
           </form>
@@ -48,25 +51,21 @@
                 <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
                   <strong id="temperature"></strong
-                  ><span class="units"> °C | °F</span>
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> 
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> m/h</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
-            <div class="weather-forecast" id="forecast">
-              
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
+          <div class="weather-forecast" id="forecast"></div>
         </div>
-        <footer class="footer">
+        <small>
           <a href="https://github.com/thebraand/myweatherapp" target="_blank"
             >GitHub Repository</a
           >
@@ -74,7 +73,7 @@
           <a href="https://agitated-ritchie-f6e106.netlify.app/" target="_blank"
             >hosted on Netlify</a
           >
-        </footer>
+        </small>
       </div>
     </div>
     <script src="src/app.js"></script>

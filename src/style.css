@@ -1,10 +1,10 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1 {
-  color: #878787;
-  font-size: 24px;
+  color: rgb(33, 33, 33);
+  font-size: 30px;
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
@@ -20,7 +20,7 @@ li {
   margin: 0;
   padding: 0;
 
-  color: rgb(135, 135, 135);
+  color: rgb(33, 33, 33);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
@@ -76,14 +76,17 @@ li:first-letter {
 
 .weather-forecast {
   margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   text-align: center;
-  color: rgb(5, 5, 5);
-  width: 600px;
+  color: rgb(33, 33, 33);
+  width: 500px;
 }
 
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 18px;
   opacity: 0.5;
+  color: rgb(33, 33, 33);
 }
 .weather-forecast-temperature-max {
   font-size: 13px;
@@ -95,6 +98,10 @@ li:first-letter {
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+.btn-dark {
+  width: 120px;
+  box-shadow: 0 20px 20px rgb(65 50 100 / 8%);
 }
 .footer {
   color: #5c8d89;
